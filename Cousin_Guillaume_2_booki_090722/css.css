@@ -1,0 +1,943 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+
+* {
+    font-family: "Raleway";
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+body {
+    margin: 0;
+}
+
+#hébergements,
+h3 {
+    margin: 0%;
+    margin-bottom: 15px;
+
+}
+
+.navigation {
+    margin-top: 53px;
+
+}
+
+nav {
+    display: flex;
+
+
+
+}
+
+nav a {
+    padding: 50px;
+
+
+}
+
+nav a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+
+#logobooki {
+    margin-right: auto;
+    height: 70px;
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+
+
+input {
+    font-weight: bold;
+}
+
+.title {
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.recherche {
+    display: flex;
+}
+
+.recherche i {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.fa-solid.fa-magnifying-glass {
+    display: none;
+}
+
+.recherche input {
+    padding-right: 15px;
+    border: 2px solid #f2f2f2;
+
+}
+
+.recherche button {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: bold;
+    padding: 0px 10px;
+    border: lightgrey;
+    cursor: pointer;
+}
+
+.fa-solid.fa-money-bill-wave {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 17px;
+    border-radius: 50px;
+
+}
+
+.fa-solid.fa-child-reaching {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 17px;
+    border-radius: 50px;
+
+}
+
+.fa-solid.fa-heart {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 17px;
+    border-radius: 50px;
+}
+
+.fa-solid.fa-dog {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 17px;
+    border-radius: 50px;
+}
+
+.filtres span
+
+/* mot des filtres*/
+    {
+    font-weight: bold;
+    padding: 15px;
+}
+
+.filtres
+
+/*interieur des filtres*/
+    {
+    border: 1px solid lightgrey;
+    border-radius: 25px 25px 25px 25px;
+    display: flex;
+    align-items: center;
+
+}
+
+.filtrediv {
+    display: flex;
+    gap: 30px;
+}
+
+.listefiltre {
+    display: flex;
+    align-items: center;
+    gap
+    /*espace partout*/
+    : 30px;
+    margin-top: 20px;
+}
+
+.listefiltre h2 {
+    margin-left: 0px;
+}
+
+.filtres span:hover {
+    background-color: #DEEBFF;
+    /*bleu clair*/
+    background-clip: content-box;
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+div .pictures:hover
+
+/*agrandissement des div au curseur*/
+    {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+
+
+}
+
+.info .fa-solid.fa-info
+
+/*I du logo info*/
+    {
+    color: #0065FC;
+    width: 30px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.appartement
+
+/* block appart marseille*/
+    {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+
+
+}
+
+.appartement div {
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding: 5px;
+
+}
+
+.listeappart {
+    background-color: #f2f2f2;
+}
+
+#hébergements,
+h2 {
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-bottom: 30px;
+}
+
+.appartement .listeappart
+
+/*bloc des hebergement a marseille*/
+    {
+    flex-basis: 66%;
+}
+
+.appartement .populaire
+
+/*bloc les plus populaires*/
+    {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.populaire {
+    background-color: #f2f2f2;
+}
+
+.populaire h2 {
+    /* etoiles apres les plus populaires*/
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+.appartement .leshebergements a {
+    font-weight: bold;
+
+}
+
+
+.leshebergements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+    margin-left: 30px;
+}
+
+.leshebergements div
+
+/* petit bloc dans hebergement a marseille*/
+    {
+    flex-basis: 32%;
+    background-color: white;
+    box-shadow: 0 0 16px darkgrey;
+
+}
+
+.afficher {
+    margin-top: 10px;
+    margin-left: 40px;
+
+}
+
+/*  etoiles*/
+.etoilesbleu {
+    color: #0065FC;
+    display: inline;
+}
+
+.etoilesgris {
+    color: lightgrey;
+}
+
+/*images de marseille et plus populaires*/
+.pictures img {
+    height: 180px;
+    display: flex;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.popdiv {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.populaire div
+
+/* petit bloc les plus populaires interieur des div */
+    {
+    background-color: white;
+
+    display: flex;
+
+}
+
+.populaire .pictures {
+
+    background-color: white;
+    box-shadow: 0 0 16px darkgrey;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.populaire .pictures img {
+    border-radius: 15px 0 0 15px;
+    width: 180px;
+
+}
+
+.populaire h2 {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.populardescription {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.populardescription p,
+h3 {
+    margin: 0;
+}
+
+a {
+
+    opacity: 100%;
+}
+
+
+
+/* activite a marseille*/
+
+
+.divactivite
+
+/*tout les blocs acti a marseille*/
+    {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.divactivite div :hover
+
+/*agrandissement des div au curseur*/
+    {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.activité {
+    width: 23%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.activité.grande {
+    gap: 39px;
+}
+
+.divactivite h4 {
+    display: flex;
+
+    align-items: flex-start;
+    padding-left: 30px;
+
+}
+
+.activitesliste h2 {
+    padding-left: 10px;
+
+
+}
+
+.vieuxport {
+
+    border-radius: 30px;
+    box-shadow: 0 0 10px darkgrey;
+
+
+}
+
+.vieuxport img {
+    width: 100%;
+    height: 410px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+}
+
+.fortdepomegues {
+    border-radius: 30px;
+    box-shadow: 0 0 10px darkgrey;
+
+}
+
+.fortdepomegues img {
+    width: 100%;
+    height: 180px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+
+}
+
+.ilesdufrioul {
+
+    border-radius: 30px;
+    box-shadow: 0 0 10px darkgrey;
+
+
+}
+
+.ilesdufrioul img {
+    width: 100%;
+    height: 125px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+
+
+}
+
+.calanques {
+
+    border-radius: 30px;
+    box-shadow: 0 0 10px darkgrey;
+
+}
+
+.calanques img {
+    width: 100%;
+    height: 410px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+
+}
+
+.notredame {
+
+    border-radius: 30px;
+    box-shadow: 0 0 10px darkgrey;
+
+}
+
+.notredame img {
+    width: 100%;
+    height: 150px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+
+}
+
+.Longchamp {
+
+    border-radius: 30px;
+    box-shadow: 0 0 10px darkgrey;
+}
+
+.Longchamp img {
+    width: 100%;
+    height: 155px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+}
+
+footer
+
+/*bas de page en display flex*/
+    {
+
+    background-color: #f2f2f2;
+}
+
+.footerdiv {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-left: 40px;
+    padding-top: 30px;
+}
+
+
+/* media queries*/
+
+@media screen and (min-witdh: 768px) , (max-width: 992px) {
+    .navigation {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        flex-wrap: wrap;
+    }
+
+    nav a:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top: 3px solid transparent;
+    }
+
+    .navigation a {
+        width: 50%;
+        text-align: center;
+        border-bottom: 3px solid #f2f2f2;
+        margin-top: -50px;
+    }
+
+    #logobooki {
+        padding-left: 40%;
+        width: 60%;
+    }
+
+    
+
+    .recherche input {
+        border-bottom: 2px solid #f2f2f2;
+        border-top: 2px solid #f2f2f2;
+        width: 200px;
+    }
+
+    .appartement {
+        padding-left: 0;
+        padding-right:0;
+
+    }
+
+    .appartement div {
+        padding: 2px;
+
+
+    }
+
+
+    .activité img {
+        height: 200px;
+    }
+
+    .grande {
+        height: auto;
+    }
+
+    .divactivite {
+        padding: 0 20px;
+    }
+
+
+    .vieuxport {
+
+        display: block;
+    }
+
+    .appartement {
+        flex-direction: column;
+        order: 2;
+    }
+
+    button {
+        display: none;
+
+    }
+
+    .fa-solid.fa-magnifying-glass {
+        border-radius: 15px 15px 15px 15px;
+        background-color: #0065FC;
+        color: white;
+        display: inline;
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+    .listefiltre {
+        flex-wrap: wrap;
+    }
+
+    .filtrediv {
+        flex-wrap: wrap;
+    }
+
+
+
+    .pictures,
+    .leshebergements {
+        flex-direction: column;
+
+    }
+
+    .leshebergements {
+        margin-left: 20px;
+        margin-right: 10px;
+
+
+    }
+
+    .populaire,
+    .pictures {
+        gap: 30px;
+
+
+    }
+
+    .populaire .pictures {
+
+        margin-left: 3%;
+
+
+
+    }
+
+    .populaire {
+        margin-top: 10px;
+        order: -1;
+
+
+
+    }
+   
+    .populardescription {
+        margin-left: -20px;
+        
+    }
+
+    .listeappart {
+        background-color: transparent;
+        margin-top: 10px;
+        margin-left: -20px;
+    }
+
+    .populaire .pictures img {
+        width: 150px;
+
+    }
+
+    .pictures,
+    .populaire {
+        flex-direction: row;
+    }
+
+    .pictures,
+    h3,
+    p {
+        margin-left: 10px;
+    }
+
+    .activité {
+        height: auto;
+    }
+
+
+    .activitesliste div {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+
+    }
+
+    .activité,
+    .grande {
+        margin-bottom: 20px;
+
+    }
+
+    .activité.grande {
+        gap: 20px;
+
+    }
+    .activitesliste h2 {
+        padding-left: 0;
+    }
+
+
+    .title {
+        display: block;
+        margin-left: 10px;
+    }
+
+
+    footer div {
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        flex-wrap: wrap;
+    }
+
+    nav a:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top: 3px solid transparent;
+    }
+
+    .navigation a {
+        width: 50%;
+        text-align: center;
+        border-bottom: 3px solid #f2f2f2;
+        margin-top: -50px;
+    }
+
+    #logobooki {
+        padding-left: 40%;
+        width: 75%;
+    }
+
+    
+
+    .recherche input {
+        border-bottom: 2px solid #f2f2f2;
+        border-top: 2px solid #f2f2f2;
+        width: 200px;
+    }
+
+    .appartement {
+        padding-left: 0;
+        padding-right:0;
+
+    }
+
+    .appartement div {
+        padding: 2px;
+
+
+    }
+
+
+    .activité img {
+        height: 200px;
+    }
+
+    .grande {
+        height: auto;
+    }
+
+    .divactivite {
+        padding: 0 20px;
+    }
+
+
+    .vieuxport {
+
+        display: block;
+    }
+
+    .appartement {
+        flex-direction: column;
+        order: 2;
+    }
+.appartement .populaire{
+    border-radius: 0;
+}
+    button {
+        display: none;
+
+    }
+
+    .fa-solid.fa-magnifying-glass {
+        border-radius: 15px 15px 15px 15px;
+        background-color: #0065FC;
+        color: white;
+        display: inline;
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+    .listefiltre {
+        flex-wrap: wrap;
+    }
+
+    .filtrediv {
+        flex-wrap: wrap;
+    }
+
+
+
+    .pictures,
+    .leshebergements {
+        flex-direction: column;
+
+    }
+
+    .leshebergements {
+        margin-left: 20px;
+        margin-right: 10px;
+
+
+    }
+
+    .populaire,
+    .pictures {
+        gap: 30px;
+
+
+    }
+
+    .populaire .pictures {
+
+        margin-left: 3%;
+
+
+
+    }
+
+    .populaire {
+        margin-top: 10px;
+        order: -1;
+
+
+
+    }
+
+    .populardescription {
+        margin-left: -20px;
+    }
+
+    .listeappart {
+        background-color: transparent;
+        margin-top: 10px;
+        margin-left: -20px;
+    }
+
+    .populaire .pictures img {
+        width: 150px;
+
+    }
+
+    .pictures,
+    .populaire {
+        flex-direction: row;
+    }
+
+    .pictures,
+    h3,
+    p {
+        margin-left: 10px;
+    }
+
+    .activité {
+        height: auto;
+    }
+
+
+    .activitesliste div {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+
+    }
+
+    .activité,
+    .grande {
+        margin-bottom: 20px;
+
+    }
+
+    .activité.grande {
+        gap: 20px;
+
+    }
+    .activitesliste h2 {
+        padding-left: 0;
+    }
+
+
+    .title {
+        display: block;
+        margin-left: 10px;
+    }
+
+
+    footer div {
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
